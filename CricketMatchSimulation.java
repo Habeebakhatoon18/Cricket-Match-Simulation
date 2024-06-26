@@ -175,7 +175,7 @@ public class CricketMatchSimulation {
         }
 
         System.out.printf("%s : %d / %d    vs      \"%s : %d / %d  ", teams[0].name, teams[0].runs, teams[0].wickets,
-                teams[0].name, teams[0].runs, teams[0].wickets);
+                teams[1].name, teams[1].runs, teams[1].wickets);
 
     }
 
@@ -191,6 +191,7 @@ public class CricketMatchSimulation {
 
     private static void stimulateMatch() {
         int run;
+        System.out.println("Enter details in format : runs , batter name, delivery type");
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < overs; j++) {
                 System.out.println("Enter new bowler name :");
@@ -226,7 +227,7 @@ public class CricketMatchSimulation {
         for (int i = 0; i < 50; i++)
             System.out.print("*");
         ;
-        System.out.println("Please read instruction before starting to avoid any difficulties further");
+        System.out.println("\nPlease read instruction before starting to avoid any difficulties further");
         additional_info();
 
         System.out.println("Game starts !");
